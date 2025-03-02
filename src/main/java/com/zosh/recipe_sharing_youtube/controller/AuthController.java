@@ -65,7 +65,7 @@ public class AuthController {
         return response;
     }
 
-    @PostMapping("/signin")     //used for already users {login} purpose
+    @PostMapping("/signin")     //used for login purpose
     public AuthResponse signinHandler(@RequestBody LoginRequest loginRequest) {
         String username= loginRequest.getEmail();
         String password= loginRequest.getPassword();
